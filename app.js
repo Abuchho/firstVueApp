@@ -8,7 +8,7 @@ const app = Vue.createApp({
     },
     methods: {
         async newActivity(){
-            const res = await fetch('http://www.boredapi.com/api/activity/')
+            const res = await fetch('https://www.boredapi.com/api/activity/')
             const data = await res.json();
             console.log(data)
             this.activity = data.activity
